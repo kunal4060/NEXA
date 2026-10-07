@@ -38,7 +38,7 @@ export default function WhyNexa() {
           <h2 className="font-['Space_Grotesk'] font-semibold text-2xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-white">
             WHY NEXA EXISTS
           </h2>
-          <p className="mt-4 text-zinc-400 text-sm sm:text-base font-light">
+          <p className="mt-4 text-zinc-400 text-xs sm:text-sm font-mono leading-relaxed">
             University isn't overwhelming because the material is hard. 
             It is overwhelming because the administrative friction is completely scattered.
           </p>
