@@ -122,7 +122,7 @@ export default function NiaCapabilities() {
           <h2 className="font-['Space_Grotesk'] font-semibold text-2xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-white">
             WHAT NIA CAN DO
           </h2>
-          <p className="mt-4 text-zinc-400 text-sm sm:text-base font-light">
+          <p className="mt-4 text-zinc-400 text-xs sm:text-sm font-mono leading-relaxed">
             NIA operates across 11 cognitive dimensions — processing raw university signals into immediate, structured student actions.
           </p>
         </div>
