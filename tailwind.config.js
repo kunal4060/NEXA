@@ -9,10 +9,17 @@ export default {
       colors: {
         background: '#050508',
         accent: {
-          DEFAULT: '#8B5CF6',
-          light: '#A78BFA',
-          dark: '#7C3AED',
-          soft: 'rgba(139, 92, 246, 0.14)',
+          DEFAULT: 'rgb(var(--accent-500) / <alpha-value>)',
+          light: 'rgb(var(--accent-400) / <alpha-value>)',
+          dark: 'rgb(var(--accent-600) / <alpha-value>)',
+          soft: 'rgb(var(--accent-500) / 0.14)',
+          100: 'rgb(var(--accent-100) / <alpha-value>)',
+          200: 'rgb(var(--accent-200) / <alpha-value>)',
+          300: 'rgb(var(--accent-300) / <alpha-value>)',
+          400: 'rgb(var(--accent-400) / <alpha-value>)',
+          500: 'rgb(var(--accent-500) / <alpha-value>)',
+          600: 'rgb(var(--accent-600) / <alpha-value>)',
+          950: 'rgb(var(--accent-950) / <alpha-value>)',
         },
         surface: {
           50: '#18181f',
@@ -44,9 +51,13 @@ export default {
         'pulse-subtle': 'pulseGlow 5s ease-in-out infinite',
         'spin-slow': 'spin 24s linear infinite',
         'shimmer': 'shimmer 2.5s ease-in-out infinite',
+        'fadeIn': 'fadeIn 0.18s ease-out',
       },
       keyframes: {
-        float: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(6px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },        float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-10px)' },
         },

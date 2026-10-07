@@ -15,6 +15,7 @@ import DownloadSection from './components/DownloadSection';
 import Footer from './components/Footer';
 import FloatingAssistantWidget from './components/FloatingAssistantWidget';
 import ScrollProgress from './components/ScrollProgress';
+import ThemeSwitcher from './components/shared/ThemeSwitcher';
 import BackgroundNetwork from './components/shared/BackgroundNetwork';
 
 export default function App() {
@@ -28,6 +29,9 @@ export default function App() {
 
       {/* Scroll progress + back-to-top */}
       <ScrollProgress />
+
+      {/* Accent color theme switcher */}
+      <ThemeSwitcher />
 
       {/* Content strictly adhering to the requested storytelling order */}
       <main className="relative z-10">

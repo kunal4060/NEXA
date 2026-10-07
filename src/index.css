@@ -11,6 +11,63 @@
     --color-accent: #8B5CF6;
   }
 
+  /* ---- NEXA accent theme system (RGB triplets, space-separated) ---- */
+  /* Default theme: Violet — applied on :root; selecting violet removes data-theme */
+  :root {
+    --accent-100: 237 233 254;
+    --accent-200: 221 214 254;
+    --accent-300: 196 181 253;
+    --accent-400: 167 139 250;
+    --accent-500: 139 92 246;
+    --accent-600: 124 58 237;
+    --accent-950: 46 16 101;
+  }
+  [data-theme="cyan"] {
+    --accent-100: 207 250 254;
+    --accent-200: 165 243 252;
+    --accent-300: 103 232 249;
+    --accent-400: 34 211 238;
+    --accent-500: 6 182 212;
+    --accent-600: 8 145 178;
+    --accent-950: 8 51 68;
+  }
+  [data-theme="amber"] {
+    --accent-100: 254 243 199;
+    --accent-200: 253 230 138;
+    --accent-300: 252 211 77;
+    --accent-400: 251 191 36;
+    --accent-500: 245 158 11;
+    --accent-600: 217 119 6;
+    --accent-950: 69 26 3;
+  }
+  [data-theme="emerald"] {
+    --accent-100: 209 250 229;
+    --accent-200: 167 243 208;
+    --accent-300: 110 231 183;
+    --accent-400: 52 211 153;
+    --accent-500: 16 185 129;
+    --accent-600: 5 150 105;
+    --accent-950: 2 44 34;
+  }
+  [data-theme="rose"] {
+    --accent-100: 255 228 230;
+    --accent-200: 254 205 211;
+    --accent-300: 253 164 175;
+    --accent-400: 251 113 133;
+    --accent-500: 244 63 94;
+    --accent-600: 225 29 72;
+    --accent-950: 76 5 25;
+  }
+  [data-theme="red"] {
+    --accent-100: 254 226 226;
+    --accent-200: 254 202 202;
+    --accent-300: 252 165 165;
+    --accent-400: 248 113 113;
+    --accent-500: 239 68 68;
+    --accent-600: 220 38 38;
+    --accent-950: 69 10 10;
+  }
+
   html {
     scroll-behavior: smooth;
     color-scheme: dark;
@@ -117,16 +174,16 @@
   }
 }
 
-/* ---- Design-improvements: brand accent ---- */
-.text-accent { color: #A78BFA; }
-.bg-accent { background-color: #8B5CF6; }
+/* ---- Design-improvements: brand accent (theme-aware) ---- */
+.text-accent { color: rgb(var(--accent-400)); }
+.bg-accent { background-color: rgb(var(--accent-500)); }
 
 /* ---- #8 Accessibility: visible keyboard focus ---- */
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible,
 input:focus-visible {
-  outline: 2px solid #8B5CF6;
+  outline: 2px solid rgb(var(--accent-500));
   outline-offset: 3px;
   border-radius: 6px;
 }

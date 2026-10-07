@@ -41,7 +41,7 @@ export default function NexaAppIntro() {
 
           <h2 className="font-['Space_Grotesk'] font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-white leading-tight">
             NIA IS THE INTELLIGENCE. <br />
-            <span className="font-light bg-gradient-to-r from-violet-300 via-violet-100 to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(139,92,246,0.45)]">NEXA IS WHERE IT COMES TO LIFE.</span>
+            <span className="font-light bg-gradient-to-r from-accent-300 via-accent-100 to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_rgb(var(--accent-500)/0.45)]">NEXA IS WHERE IT COMES TO LIFE.</span>
           </h2>
 
           <p className="mt-6 text-base sm:text-lg md:text-xl text-zinc-300 font-light leading-relaxed max-w-3xl">

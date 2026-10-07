@@ -80,15 +80,15 @@ export default function FeaturesShowcase() {
           {/* Stat callouts */}
           <div className="mt-10 grid grid-cols-3 gap-3 max-w-2xl mx-auto">
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-5">
-              <div className="text-2xl sm:text-3xl font-bold text-violet-300">12+</div>
+              <div className="text-2xl sm:text-3xl font-bold text-accent-300">12+</div>
               <div className="mt-1 text-[11px] font-mono uppercase tracking-widest text-zinc-400">AI capabilities</div>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-5">
-              <div className="text-2xl sm:text-3xl font-bold text-violet-300">02</div>
+              <div className="text-2xl sm:text-3xl font-bold text-accent-300">02</div>
               <div className="mt-1 text-[11px] font-mono uppercase tracking-widest text-zinc-400">Cognitive engines</div>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-5">
-              <div className="text-2xl sm:text-3xl font-bold text-violet-300">100%</div>
+              <div className="text-2xl sm:text-3xl font-bold text-accent-300">100%</div>
               <div className="mt-1 text-[11px] font-mono uppercase tracking-widest text-zinc-400">Offline-ready</div>
             </div>
           </div>

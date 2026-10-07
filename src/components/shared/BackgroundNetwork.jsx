@@ -87,7 +87,7 @@ export default function BackgroundNetwork() {
         // Draw node
         ctx.beginPath();
         ctx.arc(p1.x, p1.y, p1.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(167, 139, 250, ${p1.baseAlpha})`;
+        ctx.fillStyle = `rgb(var(--accent-400) / ${p1.baseAlpha})`;
         ctx.fill();
 
         for (let j = i + 1; j < particles.length; j++) {
@@ -101,7 +101,7 @@ export default function BackgroundNetwork() {
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(139, 92, 246, ${alpha})`;
+            ctx.strokeStyle = `rgb(var(--accent-500) / ${alpha})`;
             ctx.lineWidth = 0.75;
             ctx.stroke();
           }
@@ -128,8 +128,8 @@ export default function BackgroundNetwork() {
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       {/* Deep dark gradient atmosphere */}
       <div className="absolute inset-0 bg-[#050508]" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-b from-violet-500/[0.08] via-transparent to-transparent rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 right-0 w-[600px] h-[600px] bg-violet-500/[0.03] rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-b from-accent-500/[0.08] via-transparent to-transparent rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 w-[600px] h-[600px] bg-accent-500/[0.03] rounded-full blur-3xl pointer-events-none" />
 
       {/* Grid Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-40 mask-radial" />

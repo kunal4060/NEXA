@@ -44,8 +44,8 @@ export default function AboutSection() {
       {/* 3D Wireframe Ambient Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-white/[0.02] rounded-full blur-[140px] pointer-events-none" />
       {/* Violet nebula ambience */}
-      <div className="absolute -top-20 left-1/4 w-[500px] h-[500px] bg-violet-600/10 rounded-full blur-[160px] pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-[600px] h-[400px] bg-violet-500/[0.07] rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute -top-20 left-1/4 w-[500px] h-[500px] bg-accent-600/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-[600px] h-[400px] bg-accent-500/[0.07] rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
@@ -57,7 +57,7 @@ export default function AboutSection() {
           
           <h2 className="font-['Space_Grotesk'] font-semibold text-2xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-white leading-tight">
             BUILT BY <br />
-            <span className="font-light bg-gradient-to-r from-violet-300 via-violet-100 to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(139,92,246,0.45)]">TEAM GLITCHERS</span>
+            <span className="font-light bg-gradient-to-r from-accent-300 via-accent-100 to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_rgb(var(--accent-500)/0.45)]">TEAM GLITCHERS</span>
           </h2>
 
           <p className="mt-6 text-base sm:text-lg md:text-xl text-zinc-300 font-light leading-relaxed max-w-2xl">

@@ -106,15 +106,15 @@ export default function EverythingConnected() {
           {/* Stat callouts */}
           <div className="mt-8 grid grid-cols-3 gap-3 max-w-xl mx-auto">
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
-              <div className="text-xl sm:text-2xl font-bold text-violet-300">06</div>
+              <div className="text-xl sm:text-2xl font-bold text-accent-300">06</div>
               <div className="mt-1 text-[10px] font-mono uppercase tracking-widest text-zinc-400">Modules linked</div>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
-              <div className="text-xl sm:text-2xl font-bold text-violet-300">01</div>
+              <div className="text-xl sm:text-2xl font-bold text-accent-300">01</div>
               <div className="mt-1 text-[10px] font-mono uppercase tracking-widest text-zinc-400">Email trigger</div>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4">
-              <div className="text-xl sm:text-2xl font-bold text-violet-300">00</div>
+              <div className="text-xl sm:text-2xl font-bold text-accent-300">00</div>
               <div className="mt-1 text-[10px] font-mono uppercase tracking-widest text-zinc-400">Buttons pressed</div>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function EverythingConnected() {
             <button
               onClick={handleRunCascade}
               disabled={isPlaying}
-              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-violet-500 text-white hover:bg-violet-400 transition-all shadow-[0_0_25px_rgba(139,92,246,0.45)] disabled:opacity-50"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-accent-500 text-white hover:bg-accent-400 transition-all shadow-[0_0_25px_rgb(var(--accent-500)/0.45)] disabled:opacity-50"
             >
               <Play className="w-3.5 h-3.5 fill-current" />
               <span>{isPlaying ? 'Executing Autonomous Cascade...' : 'Simulate Email → Action Cascade'}</span>

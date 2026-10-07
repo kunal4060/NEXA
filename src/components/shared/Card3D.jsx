@@ -46,20 +46,20 @@ export default function Card3D({ children, className = '', depth = 12, glare = t
         transformStyle: 'preserve-3d',
         transition: 'transform 0.15s ease-out, box-shadow 0.25s ease-out',
       }}
-      className={`relative rounded-2xl overflow-hidden glass-panel glass-panel-hover shadow-[0_0_30px_rgba(139,92,246,0.08)] ${className}`}
+      className={`relative rounded-2xl overflow-hidden glass-panel glass-panel-hover shadow-[0_0_30px_rgb(var(--accent-500)/0.08)] ${className}`}
     >
       {/* Dynamic Specular Glare */}
       {glare && (
         <div
           className="pointer-events-none absolute inset-0 z-20 transition-opacity duration-300"
           style={{
-            background: `radial-gradient(circle 280px at ${glarePos.x}% ${glarePos.y}%, rgba(167, 139, 250, ${glarePos.opacity}), transparent 70%)`,
+            background: `radial-gradient(circle 280px at ${glarePos.x}% ${glarePos.y}%, rgb(var(--accent-400) / ${glarePos.opacity}), transparent 70%)`,
           }}
         />
       )}
 
       {/* Subtle border shine highlight */}
-      <div className="absolute inset-0 border border-violet-500/20 rounded-2xl pointer-events-none" />
+      <div className="absolute inset-0 border border-accent-500/20 rounded-2xl pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 h-full">
