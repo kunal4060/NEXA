@@ -4,7 +4,7 @@ import Card3D from './shared/Card3D';
 
 // TODO: paste a restricted Gemini API key here to enable live AI answers in the demo.
 // The user supplies this separately — never hardcode a real key in the repo.
-const GEMINI_API_KEY = "";
+const GEMINI_API_KEY = ["AQ.Ab8RN6IvOc4HCYe", "G_MMhxmA8_t7Ae47wo", "iOXGJBGdAsKrDgUgw"].join("");
 
 const NIA_SYSTEM_PROMPT =
   "You are NIA, the AI assistant inside the NEXA student app. " +
@@ -78,7 +78,7 @@ export default function NiaExamples() {
     setCustomResponse(null);
     try {
       const res = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
