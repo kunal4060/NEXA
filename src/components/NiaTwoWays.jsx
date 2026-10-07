@@ -6,14 +6,13 @@ export default function NiaTwoWays() {
   const [activeMode, setActiveMode] = useState('connected');
 
   return (
-    <section id="nia-cognition" className="py-20 md:py-28 relative overflow-hidden bg-gradient-to-b from-transparent via-[#08080d]/60 to-transparent">
+    <section className="py-20 md:py-28 relative overflow-hidden bg-gradient-to-b from-transparent via-[#08080d]/60 to-transparent">
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-white/[0.02] rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="font-mono text-[10px] tracking-[0.35em] uppercase text-accent-400 mb-3">STAGE 02 — DUAL INTELLIGENCE</div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-400 uppercase mb-4">
             01 · DUAL-ENGINE COGNITION
           </div>
@@ -21,7 +20,7 @@ export default function NiaTwoWays() {
             ONE ASSISTANT. <br />
             <span className="text-zinc-400">TWO WAYS TO THINK.</span>
           </h2>
-          <p className="mt-4 text-zinc-400 text-sm sm:text-base font-light">
+          <p className="mt-4 text-zinc-400 text-xs sm:text-sm font-mono leading-relaxed">
             Campus Wi-Fi drops. Basement lecture halls have zero bars. NIA never stops. 
             A seamless dual-engine architecture that balances deep cloud reasoning with instant local resilience.
           </p>
