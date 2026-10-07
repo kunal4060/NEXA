@@ -34,8 +34,7 @@ export default function NexaAppIntro() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-left max-w-4xl mb-16">
-          <div className="font-mono text-[10px] tracking-[0.35em] uppercase text-accent-400 mb-3">STAGE 03 — THE NEXA APP</div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-400 uppercase mb-4 backdrop-blur-md">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-400 uppercase mb-4 backdrop-blur-md">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
             THE STUDENT OPERATING SYSTEM
           </div>
@@ -45,7 +44,7 @@ export default function NexaAppIntro() {
             <span className="font-light bg-gradient-to-r from-accent-300 via-accent-100 to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_rgb(var(--accent-500)/0.45)]">NEXA IS WHERE IT COMES TO LIFE.</span>
           </h2>
 
-          <p className="mt-6 text-base sm:text-lg md:text-xl text-zinc-300 font-light leading-relaxed max-w-3xl">
+          <p className="mt-6 text-sm sm:text-base text-zinc-300 font-mono leading-relaxed max-w-3xl">
             NEXA is a <span className="text-white font-medium">spatial, mobile-first student ecosystem</span> engineered to eliminate administrative friction. It unifies the 14 essential pillars of campus existence into a single, cohesive glass cockpit.
           </p>
         </div>
@@ -108,7 +107,7 @@ export default function NexaAppIntro() {
 
               <a
                 href="#features"
-                className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-white text-black hover:bg-zinc-200 transition-all shadow-[0_0_25px_rgba(255,255,255,0.3)] hover:scale-105"
+                className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-white text-black hover:bg-zinc-200 transition-all shadow-[0_0_25px_rgba(255,255,255,0.3)] hover:scale-105"
               >
                 <span>Interactive 3D Preview</span>
                 <ArrowRight className="w-3.5 h-3.5" />
