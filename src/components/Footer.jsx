@@ -74,7 +74,6 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-zinc-500 text-[11px]">
           <div>
             © {new Date().getFullYear()} NEXA. Built by Team Glitchers. All rights reserved.
-            <span className="block mt-1 text-zinc-600">Made by <span className="text-zinc-400">Shaurya Kumar</span></span>
           </div>
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
