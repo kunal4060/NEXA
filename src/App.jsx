@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 import FloatingAssistantWidget from './components/FloatingAssistantWidget';
 import ScrollProgress from './components/ScrollProgress';
 import ThemeSwitcher from './components/shared/ThemeSwitcher';
+import JourneyTracker from './components/shared/JourneyTracker';
 import BackgroundNetwork from './components/shared/BackgroundNetwork';
 
 export default function App() {
@@ -32,6 +33,9 @@ export default function App() {
 
       {/* Accent color theme switcher */}
       <ThemeSwitcher />
+
+      {/* Neural mission-control journey HUD */}
+      <JourneyTracker />
 
       {/* Content strictly adhering to the requested storytelling order */}
       <main className="relative z-10">

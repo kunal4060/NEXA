@@ -50,6 +50,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-left max-w-4xl mb-16">
+          <div className="font-mono text-[10px] tracking-[0.35em] uppercase text-accent-400 mb-3">STAGE 06 — TEAM GLITCHERS</div>
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-400 uppercase mb-4 backdrop-blur-md">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
             ENGINEERING & VISION

@@ -16,6 +16,7 @@ export default function HeroNia() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col items-center text-center">
           {/* Futuristic Pill with Ping Indicator */}
+          <div className="font-mono text-[10px] tracking-[0.35em] uppercase text-accent-400 mb-3">STAGE 01 — EXPLORE NIA</div>
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-300 uppercase mb-8 backdrop-blur-xl shadow-[0_0_20px_rgba(255,255,255,0.06)]">
             <span className="w-2 h-2 rounded-full bg-white animate-ping" />
             <span>NIA — NEXA INTELLIGENT ASSISTANCE</span>
