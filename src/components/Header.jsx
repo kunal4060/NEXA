@@ -65,9 +65,7 @@ export default function Header() {
               onClick={(e) => scrollToSection(e, '#nia')}
               className="flex items-center gap-2.5 group cursor-pointer"
             >
-              <div className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105 group-hover:border-white/40">
-                <div className="w-3.5 h-3.5 bg-white rounded-sm rotate-45 flex items-center justify-center shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
-              </div>
+              <img src="/NEXA/nexa-logo.png" alt="NEXA" className="w-8 h-8 rounded-lg transition-transform group-hover:scale-105" />
               <div className="flex flex-col">
                 <span className="font-['Syncopate'] text-base font-bold tracking-[0.22em] text-white group-hover:text-glow transition-all">
                   NEXA

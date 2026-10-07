@@ -22,6 +22,7 @@ export default function Footer() {
           {/* Brand Wordmark & Team Distinction */}
           <div>
             <div className="flex items-center gap-2 mb-2">
+              <img src="/NEXA/nexa-logo.png" alt="NEXA" className="w-6 h-6 rounded-md" />
               <span className="font-['Syncopate'] text-2xl font-bold tracking-[0.25em] text-white">
                 NEXA
               </span>
