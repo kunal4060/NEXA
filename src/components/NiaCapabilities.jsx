@@ -156,7 +156,7 @@ export default function NiaCapabilities() {
                     <div className={`text-xs font-semibold tracking-wide ${isSelected ? 'text-white' : 'text-zinc-300'}`}>
                       {cap.name}
                     </div>
-                    <div className="text-[10px] text-zinc-500 font-mono mt-0.5 line-clamp-1">
+                    <div className="text-[10px] text-zinc-500 font-mono mt-0.5 break-words">
                       {cap.tagline}
                     </div>
                   </div>
