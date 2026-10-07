@@ -49,8 +49,7 @@ export default function DownloadSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main CTA Header */}
         <div className="text-center max-w-5xl mx-auto mb-16">
-          <div className="font-mono text-[10px] tracking-[0.35em] uppercase text-accent-400 mb-3">STAGE 07 — GET NEXA</div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-400 uppercase mb-6 backdrop-blur-md">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-400 uppercase mb-6 backdrop-blur-md">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
             FINAL DESTINATION • JOIN THE FUTURE
           </div>
@@ -109,7 +108,7 @@ export default function DownloadSection() {
                 <div className="pt-4 flex flex-wrap items-center gap-3">
                   <button
                     onClick={handleDownload}
-                    className="inline-flex items-center gap-2.5 px-10 py-5 rounded-full text-sm font-semibold uppercase tracking-wider bg-gradient-to-r from-accent-600 to-accent-500 text-white hover:from-accent-500 hover:to-accent-400 transition-all shadow-[0_0_45px_rgb(var(--accent-500)/0.65)] hover:scale-105"
+                    className="inline-flex items-center gap-2.5 px-10 py-5 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-gradient-to-r from-accent-600 to-accent-500 text-white hover:from-accent-500 hover:to-accent-400 transition-all shadow-[0_0_45px_rgb(var(--accent-500)/0.65)] hover:scale-105"
                   >
                     <Download className="w-4 h-4" />
                     <span>{downloadTriggered ? 'Opening Drive\u2026' : 'Download APK'}</span>
@@ -117,7 +116,7 @@ export default function DownloadSection() {
 
                   <button
                     onClick={() => setShowQrModal(true)}
-                    className="inline-flex items-center gap-2 px-5 py-4 rounded-full text-xs font-semibold uppercase tracking-wider bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-zinc-300 hover:text-white transition-all backdrop-blur-md"
+                    className="inline-flex items-center gap-2 px-5 py-4 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-zinc-300 hover:text-white transition-all backdrop-blur-md"
                   >
                     <QrCode className="w-4 h-4" />
                     <span>Scan QR</span>
@@ -187,7 +186,7 @@ export default function DownloadSection() {
                 href={APK_DRIVE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-xs font-semibold uppercase tracking-wider bg-accent-500 text-white hover:bg-accent-400 transition-all shadow-[0_0_30px_rgb(var(--accent-500)/0.5)] mb-6"
+                className="inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-accent-500 text-white hover:bg-accent-400 transition-all shadow-[0_0_30px_rgb(var(--accent-500)/0.5)] mb-6"
               >
                 <Download className="w-4 h-4" />
                 <span>Download APK</span>
