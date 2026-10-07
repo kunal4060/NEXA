@@ -16,10 +16,15 @@ export default function HeroNia() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col items-center text-center">
           {/* Futuristic Pill with Ping Indicator */}
-          <div className="font-mono text-[10px] tracking-[0.35em] uppercase text-accent-400 mb-3">STAGE 01 — EXPLORE NIA</div>
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-300 uppercase mb-8 backdrop-blur-xl shadow-[0_0_20px_rgba(255,255,255,0.06)]">
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-300 uppercase mb-3 backdrop-blur-xl shadow-[0_0_20px_rgba(255,255,255,0.06)]">
             <span className="w-2 h-2 rounded-full bg-white animate-ping" />
             <span>NIA — NEXA INTELLIGENT ASSISTANCE</span>
+          </div>
+
+          {/* NIA LIVE Indicator */}
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-500/10 border border-accent-500/30 text-[10px] font-mono tracking-widest text-accent-300 uppercase mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent-500 animate-pulse" />
+            <span>NIA LIVE</span>
           </div>
 
           {/* Huge Cinematic Futuristic Typography */}
@@ -60,14 +65,14 @@ export default function HeroNia() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#nexa-app"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-accent-500 text-white hover:bg-accent-400 transition-all shadow-[0_0_30px_rgb(var(--accent-500)/0.5)] hover:scale-105"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-accent-500 text-white hover:bg-accent-400 transition-all shadow-[0_0_30px_rgb(var(--accent-500)/0.5)] hover:scale-105"
             >
               <span>Explore NEXA Architecture</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
               href="#demo"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-xs font-semibold uppercase tracking-wider text-zinc-300 bg-white/[0.03] border border-white/10 hover:bg-white/[0.08] hover:text-white transition-all backdrop-blur-md"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-xs font-mono font-semibold uppercase tracking-wider text-zinc-300 bg-white/[0.03] border border-white/10 hover:bg-white/[0.08] hover:text-white transition-all backdrop-blur-md"
             >
               <span>Watch Launch Video</span>
             </a>
