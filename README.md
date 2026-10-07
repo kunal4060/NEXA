@@ -275,4 +275,6 @@ This project is licensed under the **MIT License** — see [LICENSE](LICENSE) fo
 
 *Built with 💜 by Team GLITCHERS*
 
+*Made by **Shaurya Kumar** — original design: [Kshaurya-07/NEXA](https://github.com/Kshaurya-07/NEXA)*
+
 </div>
