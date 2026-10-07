@@ -31,9 +31,9 @@ export default function ScrollProgress() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-24 right-6 z-50 w-11 h-11 rounded-full bg-violet-500 hover:bg-violet-400 text-white flex items-center justify-center shadow-[0_0_20px_rgba(139,92,246,0.5)] transition-all animate-fadeIn"
+          className="fixed bottom-20 md:bottom-24 right-4 md:right-6 z-50 w-9 h-9 md:w-11 md:h-11 rounded-full bg-violet-500 hover:bg-violet-400 text-white flex items-center justify-center shadow-[0_0_20px_rgba(139,92,246,0.5)] transition-all animate-fadeIn"
         >
-          <ArrowUp className="w-5 h-5" />
+          <ArrowUp className="w-4 h-4 md:w-5 md:h-5" />
         </button>
       )}
     </>

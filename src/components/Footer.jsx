@@ -22,7 +22,7 @@ export default function Footer() {
           {/* Brand Wordmark & Team Distinction */}
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="font-['Syncopate'] text-lg font-bold tracking-[0.25em] text-white">
+              <span className="font-['Syncopate'] text-2xl font-bold tracking-[0.25em] text-white">
                 NEXA
               </span>
               <span className="text-[10px] text-zinc-400 border border-white/10 px-2 py-0.5 rounded-full">
@@ -34,26 +34,29 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Links */}
-          <div className="flex flex-wrap items-center gap-6 text-xs">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="hover:text-white transition-colors"
-              >
-                {link.name}
-              </a>
-            ))}
-            <a
-              href="https://github.com/Kshaurya-07/NEXA"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:text-white transition-colors"
-            >
-              <Github className="w-3.5 h-3.5" />
-              <span>GitHub</span>
-            </a>
+          {/* Link Columns */}
+          <div className="grid grid-cols-2 gap-8 text-xs">
+            <div>
+              <div className="text-[10px] font-mono tracking-widest text-zinc-500 uppercase mb-4">Product</div>
+              <div className="flex flex-col gap-3">
+                <a href="https://kunal4060.github.io/NEXA/" className="hover:text-white transition-colors">Live Demo</a>
+                <a href="https://drive.google.com/drive/folders/1FTWEF3Nv-DdVrEB-r9dI_ydVPCRpv3xD" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Download APK</a>
+                <a href="#features" className="hover:text-white transition-colors">Features</a>
+                <a href="#demo" className="hover:text-white transition-colors">Watch Demo</a>
+              </div>
+            </div>
+            <div>
+              <div className="text-[10px] font-mono tracking-widest text-zinc-500 uppercase mb-4">Resources</div>
+              <div className="flex flex-col gap-3">
+                <a href="https://github.com/Kshaurya-07/NEXA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-white transition-colors">
+                  <Github className="w-3.5 h-3.5" />
+                  <span>GitHub</span>
+                </a>
+                <a href="https://github.com/Kshaurya-07/NEXA/issues" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Report Issue</a>
+                <a href="#about" className="hover:text-white transition-colors">About Team</a>
+                <a href="#nia" className="hover:text-white transition-colors">NIA Engine</a>
+              </div>
+            </div>
           </div>
 
           {/* Back to top button */}

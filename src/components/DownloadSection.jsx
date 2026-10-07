@@ -39,7 +39,9 @@ export default function DownloadSection() {
   return (
     <section id="download" className="py-28 md:py-40 relative overflow-hidden">
       {/* 3D Giant Glow Hemisphere */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[180vw] md:w-[1100px] h-[550px] bg-gradient-to-t from-white/[0.06] via-white/[0.015] to-transparent rounded-full blur-[180px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[180vw] md:w-[1100px] h-[550px] bg-gradient-to-t from-violet-600/[0.10] via-violet-500/[0.03] to-transparent rounded-full blur-[180px] pointer-events-none" />
+      {/* Violet nebula behind headline */}
+      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-[820px] h-[420px] bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.18),transparent_70%)] rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main CTA Header */}
@@ -54,10 +56,10 @@ export default function DownloadSection() {
             NEXA
           </div>
 
-          <h2 className="font-['Space_Grotesk'] font-semibold text-2xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-white leading-tight">
+          <h2 className="font-['Space_Grotesk'] font-semibold text-4xl sm:text-5xl md:text-6xl font-bold uppercase tracking-tight text-white leading-tight">
             YOUR STUDENT LIFE IS <br />
             ALREADY COMPLICATED. <br />
-            <span className="text-zinc-400 font-light">MANAGING IT SHOULDN'T BE.</span>
+            <span className="font-light bg-gradient-to-r from-violet-300 via-violet-100 to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(139,92,246,0.45)]">MANAGING IT SHOULDN'T BE.</span>
           </h2>
 
           <p className="mt-8 text-base sm:text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto font-light leading-relaxed">
@@ -103,7 +105,7 @@ export default function DownloadSection() {
                 <div className="pt-4 flex flex-wrap items-center gap-3">
                   <button
                     onClick={handleDownload}
-                    className="inline-flex items-center gap-2.5 px-7 py-4 rounded-full text-xs font-semibold uppercase tracking-wider bg-violet-500 text-white hover:bg-violet-400 transition-all shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:scale-105"
+                    className="inline-flex items-center gap-2.5 px-10 py-5 rounded-full text-sm font-semibold uppercase tracking-wider bg-gradient-to-r from-violet-600 to-violet-500 text-white hover:from-violet-500 hover:to-violet-400 transition-all shadow-[0_0_45px_rgba(139,92,246,0.65)] hover:scale-105"
                   >
                     <Download className="w-4 h-4" />
                     <span>{downloadTriggered ? 'Opening Drive\u2026' : 'Download APK'}</span>

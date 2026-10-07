@@ -115,7 +115,7 @@ export default function NiaCapabilities() {
     <section className="py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-left max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-400 uppercase mb-4">
             CAPABILITY MATRIX
           </div>
@@ -130,7 +130,7 @@ export default function NiaCapabilities() {
         {/* Interactive Capability Matrix */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left: Capability Pill Grid */}
-          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {capabilities.map((cap) => {
               const Icon = cap.icon;
               const isSelected = selectedCap.id === cap.id;

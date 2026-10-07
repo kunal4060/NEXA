@@ -26,7 +26,9 @@ export default function WhyNexa() {
   ];
 
   return (
-    <section className="py-20 md:py-28 relative">
+    <section className="py-20 md:py-28 relative overflow-hidden bg-gradient-to-r from-violet-950/40 via-transparent to-transparent">
+      {/* Split-moment violet wash */}
+      <div className="absolute top-1/3 -left-32 w-[560px] h-[560px] bg-violet-600/[0.08] rounded-full blur-[160px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-left max-w-3xl mb-16">
@@ -43,11 +45,11 @@ export default function WhyNexa() {
 
           {/* Core Mantra Quote */}
           <div className="mt-10 p-6 rounded-2xl bg-white/[0.03] border border-white/10 max-w-xl">
-            <div className="font-['Space_Grotesk'] font-semibold text-lg sm:text-xl font-bold tracking-wider text-white uppercase space-y-1">
+            <div className="font-['Space_Grotesk'] font-semibold text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider text-white uppercase space-y-2 leading-tight">
               <div>LESS REMEMBERING.</div>
               <div>LESS SEARCHING.</div>
               <div>LESS SWITCHING.</div>
-              <div className="text-zinc-400">MORE DOING.</div>
+              <div className="bg-gradient-to-r from-violet-300 via-violet-100 to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(139,92,246,0.45)]">MORE DOING.</div>
             </div>
           </div>
         </div>

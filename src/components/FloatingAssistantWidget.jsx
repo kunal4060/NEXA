@@ -35,8 +35,8 @@ export default function FloatingAssistantWidget() {
 
   return (
     <>
-      {/* Persistent Floating Quick-Access Trigger Button (Bottom Right) */}
-      <div className="fixed bottom-6 right-6 z-50">
+      {/* Persistent Floating Quick-Access Trigger Button (Bottom Right) — desktop only */}
+      <div className="fixed bottom-6 right-6 z-50 hidden md:block">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-black/90 border border-white/20 text-white shadow-[0_10px_35px_rgba(0,0,0,0.8),0_0_20px_rgba(255,255,255,0.15)] hover:border-white/40 hover:scale-105 transition-all duration-300 backdrop-blur-xl"
