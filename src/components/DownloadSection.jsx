@@ -97,7 +97,7 @@ export default function DownloadSection() {
                 <div className="space-y-2 text-xs font-mono text-zinc-400 pt-1">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-3.5 h-3.5 text-white" />
-                    <span>Android 9.0+ • Size: ~45 MB • Zero tracking</span>
+                    <span>Android 9.0+ • Size: 190 MB • Zero tracking</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-3.5 h-3.5 text-white" />
@@ -195,40 +195,13 @@ export default function DownloadSection() {
 
             {/* Futuristic QR Display (desktop only — hidden on mobile) */}
             <div className={`p-4 bg-white rounded-2xl shadow-lg mx-auto ${isMobileDevice ? 'hidden' : 'inline-block'}`}>
-              <svg
-                className="w-44 h-44 text-black"
-                viewBox="0 0 100 100"
-                fill="currentColor"
-              >
-                <rect x="10" y="10" width="24" height="24" rx="3" />
-                <rect x="14" y="14" width="16" height="16" fill="white" rx="2" />
-                <rect x="18" y="18" width="8" height="8" rx="1" />
-
-                <rect x="66" y="10" width="24" height="24" rx="3" />
-                <rect x="70" y="14" width="16" height="16" fill="white" rx="2" />
-                <rect x="74" y="18" width="8" height="8" rx="1" />
-
-                <rect x="10" y="66" width="24" height="24" rx="3" />
-                <rect x="14" y="70" width="16" height="16" fill="white" rx="2" />
-                <rect x="18" y="74" width="8" height="8" rx="1" />
-
-                <rect x="42" y="14" width="6" height="6" />
-                <rect x="52" y="14" width="6" height="10" />
-                <rect x="42" y="26" width="12" height="6" />
-                
-                <rect x="14" y="42" width="8" height="6" />
-                <rect x="28" y="42" width="10" height="10" />
-                <rect x="14" y="52" width="6" height="8" />
-
-                <rect x="44" y="44" width="12" height="12" rx="2" />
-                <rect x="62" y="44" width="8" height="6" />
-                <rect x="76" y="44" width="12" height="10" />
-
-                <rect x="42" y="66" width="8" height="8" />
-                <rect x="54" y="72" width="10" height="14" />
-                <rect x="70" y="68" width="16" height="8" />
-                <rect x="72" y="82" width="12" height="8" />
-              </svg>
+              <img
+                src="/NEXA/qr-download.png"
+                alt="Scan to download NEXA APK"
+                className="w-44 h-44 rounded-lg"
+                width={176}
+                height={176}
+              />
             </div>
 
             <div className="mt-6 text-[11px] font-mono text-zinc-500">
