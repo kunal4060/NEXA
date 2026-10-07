@@ -69,7 +69,6 @@ export default function FeaturesShowcase() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="font-mono text-[10px] tracking-[0.35em] uppercase text-accent-400 mb-3">STAGE 04 — INTERACT WITH FEATURES</div>
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-zinc-400 uppercase mb-4 backdrop-blur-md">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
             SPATIAL PRODUCT ENGINE
@@ -94,7 +93,7 @@ export default function FeaturesShowcase() {
             </div>
           </div>
 
-          <p className="mt-4 text-zinc-400 text-sm sm:text-base font-light">
+          <p className="mt-4 text-zinc-400 text-xs sm:text-sm font-mono leading-relaxed">
             Every feature is alive. Interact with the 3D mobile cockpit below to see real-time data calculations, autonomous OCR, and live task dispatch.
           </p>
 
@@ -151,7 +150,7 @@ export default function FeaturesShowcase() {
                 <div className="pt-2 flex flex-wrap items-center gap-3">
                   <button
                     onClick={triggerTimetableScan}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-black text-xs font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all shadow-md"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-black text-xs font-mono font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all shadow-md"
                   >
                     <Upload className="w-3.5 h-3.5" />
                     <span>{ocrScanning ? 'Processing OCR Stream...' : 'Simulate Timetable Upload'}</span>
@@ -187,7 +186,7 @@ export default function FeaturesShowcase() {
                 <div className="pt-2">
                   <button
                     onClick={() => setTaskCompleted(!taskCompleted)}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-black text-xs font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all shadow-md"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-black text-xs font-mono font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all shadow-md"
                   >
                     <CheckCircle className="w-3.5 h-3.5 text-black" />
                     <span>{taskCompleted ? 'Reset Assignment Status' : 'Mark DSA Assignment Completed'}</span>
@@ -222,7 +221,7 @@ export default function FeaturesShowcase() {
                 <div className="pt-2">
                   <button
                     onClick={triggerEmailSummarizer}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-black text-xs font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all shadow-md"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-black text-xs font-mono font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all shadow-md"
                   >
                     <RefreshCw className={`w-3.5 h-3.5 ${emailSummarizing ? 'animate-spin' : ''}`} />
                     <span>{emailSummarizing ? 'Generating Live Summary...' : 'Re-run Email Summary'}</span>
@@ -290,7 +289,7 @@ export default function FeaturesShowcase() {
                 <div className="pt-2">
                   <button
                     onClick={() => setSplitSettled(!splitSettled)}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-black text-xs font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all shadow-md"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-black text-xs font-mono font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all shadow-md"
                   >
                     <span>{splitSettled ? 'Reset Settlement' : 'Mark Share Settled (UPI)'}</span>
                   </button>
