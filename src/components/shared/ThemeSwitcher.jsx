@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Palette, Check, Shuffle } from 'lucide-react';
 
 const THEMES = [
+  { id: 'mission', label: 'Mission', dot: '#22c55e' },
   { id: 'violet', label: 'Violet', dot: '#8b5cf6' },
   { id: 'cyan', label: 'Cyan', dot: '#22d3ee' },
   { id: 'amber', label: 'Amber', dot: '#f59e0b' },
@@ -17,8 +18,8 @@ const AUTO_KEY = 'nexa-theme-auto';
 
 function applyTheme(id, save = true) {
   const root = document.documentElement;
-  if (id === 'violet') {
-    root.removeAttribute('data-theme'); // violet is the :root default
+  if (id === 'mission') {
+    root.removeAttribute('data-theme'); // mission is the :root default
   } else {
     root.setAttribute('data-theme', id);
   }
@@ -42,10 +43,10 @@ function nextTheme(id) {
 
 export default function ThemeSwitcher() {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState('violet');
+  const [active, setActive] = useState('mission');
   const [auto, setAuto] = useState(true);
   const autoRef = useRef(true);
-  const activeRef = useRef('violet');
+  const activeRef = useRef('mission');
 
   const setAutoMode = (v) => {
     autoRef.current = v;
@@ -117,7 +118,7 @@ export default function ThemeSwitcher() {
     }
   };
 
-  const activeDot = THEMES.find((t) => t.id === active)?.dot || '#8b5cf6';
+  const activeDot = THEMES.find((t) => t.id === active)?.dot || '#22c55e';
 
   return (
     <div className="fixed left-4 bottom-20 md:bottom-6 z-40 flex flex-col items-start gap-2">

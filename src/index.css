@@ -12,8 +12,26 @@
   }
 
   /* ---- NEXA accent theme system (RGB triplets, space-separated) ---- */
-  /* Default theme: Violet — applied on :root; selecting violet removes data-theme */
+  /* Default theme: Mission (neon green) — applied on :root; selecting mission removes data-theme */
   :root {
+    --accent-100: 220 252 231;
+    --accent-200: 187 247 208;
+    --accent-300: 134 239 172;
+    --accent-400: 74 222 128;
+    --accent-500: 34 197 94;
+    --accent-600: 22 163 74;
+    --accent-950: 5 46 22;
+  }
+  [data-theme="mission"] {
+    --accent-100: 220 252 231;
+    --accent-200: 187 247 208;
+    --accent-300: 134 239 172;
+    --accent-400: 74 222 128;
+    --accent-500: 34 197 94;
+    --accent-600: 22 163 74;
+    --accent-950: 5 46 22;
+  }
+  [data-theme="violet"] {
     --accent-100: 237 233 254;
     --accent-200: 221 214 254;
     --accent-300: 196 181 253;
