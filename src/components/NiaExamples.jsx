@@ -77,27 +77,37 @@ export default function NiaExamples() {
     setIsThinking(true);
     setCustomResponse(null);
     try {
-      const res = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: NIA_SYSTEM_PROMPT + query }] }],
-          }),
+      const MODELS = ['gemini-flash-latest', 'gemini-3-flash-preview'];
+      let lastErr = null;
+      for (const model of MODELS) {
+        try {
+          const ctrl = new AbortController();
+          const timer = setTimeout(() => ctrl.abort(), 20000);
+          let res;
+          try {
+            res = await fetch(
+              `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+              {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ contents: [{ parts: [{ text: NIA_SYSTEM_PROMPT + query }] }] }),
+                signal: ctrl.signal,
+              }
+            );
+          } finally {
+            clearTimeout(timer);
+          }
+          if (!res.ok) throw new Error(`Gemini HTTP ${res.status}`);
+          const data = await res.json();
+          const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || '').join('').trim() || '';
+          if (!text) throw new Error('empty response');
+          setCustomResponse({ student: query, nia: text, status: 'Live · Gemini', live: true });
+          return;
+        } catch (err) {
+          lastErr = err;
         }
-      );
-      if (!res.ok) throw new Error(`Gemini HTTP ${res.status}`);
-      const data = await res.json();
-      const text =
-        data?.candidates?.[0]?.content?.parts?.map((p) => p.text || '').join('').trim() || '';
-      if (!text) throw new Error('empty response');
-      setCustomResponse({
-        student: query,
-        nia: text,
-        status: 'Live · Gemini',
-        live: true,
-      });
+      }
+      throw lastErr;
     } catch (err) {
       setCustomResponse({
         student: query,
