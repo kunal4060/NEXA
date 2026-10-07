@@ -132,7 +132,7 @@ export default function NiaExamples() {
           <h2 className="font-['Space_Grotesk'] font-semibold text-2xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-white">
             NIA IN ACTION
           </h2>
-          <p className="mt-4 text-zinc-400 text-sm sm:text-base font-light">
+          <p className="mt-4 text-zinc-400 text-xs sm:text-sm font-mono leading-relaxed">
             No robotic syntax. No rigid commands. Natural student speech resolved into structured certainty.
           </p>
         </div>
@@ -216,7 +216,7 @@ export default function NiaExamples() {
               <button
                 type="submit"
                 disabled={isThinking}
-                className="px-4 py-2.5 rounded-xl bg-white text-black text-xs font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all flex items-center gap-1.5 shrink-0 disabled:opacity-60 disabled:cursor-wait"
+                className="px-4 py-2.5 rounded-xl bg-white text-black text-xs font-mono font-semibold uppercase tracking-wider hover:bg-zinc-200 transition-all flex items-center gap-1.5 shrink-0 disabled:opacity-60 disabled:cursor-wait"
               >
                 <span>{isThinking ? 'Thinking…' : 'Ask NIA'}</span>
                 <Send className="w-3 h-3" />
