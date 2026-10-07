@@ -98,7 +98,7 @@ export default function EverythingConnected() {
             </p>
           </div>
 
-          <p className="mt-4 text-zinc-400 text-sm sm:text-base font-light max-w-2xl mx-auto">
+          <p className="mt-4 text-zinc-400 text-xs sm:text-sm font-mono leading-relaxed max-w-2xl mx-auto">
             Watch how a single university email automatically ripples through NIA into calendar reservations, prioritised tasks, and gentle reminders without touching a single button.
           </p>
 
@@ -123,7 +123,7 @@ export default function EverythingConnected() {
             <button
               onClick={handleRunCascade}
               disabled={isPlaying}
-              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-accent-500 text-white hover:bg-accent-400 transition-all shadow-[0_0_25px_rgb(var(--accent-500)/0.45)] disabled:opacity-50"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-accent-500 text-white hover:bg-accent-400 transition-all shadow-[0_0_25px_rgb(var(--accent-500)/0.45)] disabled:opacity-50"
             >
               <Play className="w-3.5 h-3.5 fill-current" />
               <span>{isPlaying ? 'Executing Autonomous Cascade...' : 'Simulate Email → Action Cascade'}</span>
