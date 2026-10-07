@@ -86,3 +86,7 @@ npm run build
 # Preview production build
 npm run preview
 ```
+
+---
+
+*Made by **Shaurya Kumar** — original design: [Kshaurya-07/NEXA](https://github.com/Kshaurya-07/NEXA)*
