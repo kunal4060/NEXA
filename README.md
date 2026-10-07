@@ -1,88 +1,137 @@
+<div align="center">
+
 # NEXA — Mobile-First AI Student Assistant
 
-> **Powered by NIA — Nexa Intelligent Assistance**  
-> *"One Assistant. Two Ways to Think."*
+### *One Assistant. Two Ways to Think.*
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-kunal4060.github.io%2FNEXA-8B5CF6?style=for-the-badge&logo=github)](https://kunal4060.github.io/NEXA/)
+[![Build](https://img.shields.io/badge/build-passing-10B981?style=for-the-badge)](https://github.com/kunal4060/NEXA/actions)
+[![License](https://img.shields.io/badge/license-MIT-3B82F6?style=for-the-badge)](LICENSE)
+
+**NEXA** is an AI-native student operating system for college life — powered by **NIA** (NEXA Intelligent Assistance), a dual-engine cognitive architecture that works online *and* offline.
+
+🔗 **Live Website:** https://kunal4060.github.io/NEXA/
+
+</div>
 
 ---
 
-## 🌟 Overview
+## ✨ What is NEXA?
 
-**NEXA** is a premium, futuristic, mobile-first AI student assistant designed specifically for academic life. Powered by **NIA** (*Nexa Intelligent Assistance*), NEXA unifies the 14 essential pillars of student life into a single cohesive ecosystem.
+University life isn't overwhelming because the material is hard — it's overwhelming because administrative friction is scattered across a dozen apps. NEXA unifies everything into one intelligent, mobile-first cockpit:
 
-- **NIA** = The Intelligence layer behind NEXA
-- **NEXA** = The Student-life platform
+| Pillar | What NIA does |
+|--------|---------------|
+| 📧 University Gmail | Distills cluttered notices into 3-bullet summaries |
+| 🗓️ Timetable | OCR upload → synced calendar with smart reminders |
+| ✅ Tasks & Deadlines | Natural-language task creation, priority tracking |
+| 💰 Finance | Expense parsing ("I spent ₹180 at Food Street"), budgets |
+| 🤝 Borrow / Lend | Visual debt ledger, transparent tracking |
+| 👥 Shared Expenses | 1-tap group split (₹800 ÷ 4 = ₹200/share) |
+| 📄 Documents | Offline PDF store with contextual search |
+| 🔔 Notifications | Proactive: "DBMS starts in 10 mins" |
 
----
-
-## 📖 Storytelling Narrative Order
-
-The website is structured following the required storytelling sequence:
-
-1. **NIA**
-   - **What is NIA?** — The autonomous cognitive engine behind NEXA.
-   - **Why NIA exists** — Eliminating student cognitive fragmentation and missed deadlines.
-   - **What NIA can do** — 11 core capabilities: *Understand, Analyze, Summarize, Connect, Search, Recommend, Remind, Answer, Organize, Assist, Take supported actions*.
-   - **One Assistant. Two Ways to Think** — Dual-engine architecture:
-     - **Mode A: Connected / Cloud Mode** (Gemini multimodal reasoning, Vision & OCR, 12 structured action tools).
-     - **Mode B: Offline / On-Device Mode** (Local intent parsing, sub-10ms timetable lookup, math support, resilient offline action queues).
-   - **NIA Processing Architecture** — 5-step pipeline: *Student → Data/Context → NIA AI Processing → Dual Router → Personalized Output*.
-   - **Real-Life Examples** — 4 floating translucent interactive interfaces & interactive query tester.
-
-2. **NEXA APP**
-   - **"NIA is the intelligence. NEXA is where it comes to life."**
-   - Unifying 14 pillars: University Gmail, Timetable, Deadlines, Tasks, Exams, Assignments, Calendar, Finance, Budgets, Borrow/Lend, Shared expenses, Documents, Contextual Search, and Smart Notifications.
-   - **Why NEXA Exists** — The student problem & Before vs. After transformation.
-   - **Core message** — *"Less remembering. Less searching. Less switching. More doing."*
-
-3. **FEATURES**
-   - Interactive 3D phone cockpit with active simulated screens:
-     - **Academic Features** (Timetable OCR upload simulation, schedule, attendance tracking).
-     - **Task Manager** (Extremely Important DSA deadline, countdown, completion toggle).
-     - **University Gmail** (Cluttered notice vs. concise 3-bullet NIA summary).
-     - **Finance Tracker** (Natural language spend parsing e.g. *"I spent ₹180 at Food Street"*).
-     - **Borrow / Lend** (Clear visual ledger & debts).
-     - **Shared Expenses** (Interactive Group Splitter: 4 students dinner ₹800 → ₹200/share, Arjun paid, Settle button).
-     - **Documents & Contextual Search**.
-     - **Contextual AI Chat Inside NEXA**.
-     - **Smart Notification Feed** (*"DBMS starts in 10 mins"*, *"DSA due tomorrow"*).
-   - **EVERYTHING IS CONNECTED** — Central hero visual cascade:
-     *University Email → NIA Understands → Deadline Detected → Task Created → Calendar Updated → Reminder*.
-   - **FLOATING NEXA ASSISTANT (HUD)** — Minimal floating quick-access widget with mini Email, Finance, Tasks, Calendar, and AI tabs.
-
-4. **DEMO VIDEO**
-   - *"SEE NEXA IN ACTION"* — High-definition product demo embedded in a cinematic 3D frame with soft ambient glow (`https://youtu.be/YdRgdgZewSU`).
-
-5. **ABOUT ("BUILT BY TEAM GLITCHERS")**
-   - The Visionary Collective: **Team Glitchers** (Autonomous Cognition, Spatial Product Design, On-Device Systems, Student Privacy Architecture).
-   - "Technology designed around the way students actually live, learn and manage their day."
-   - Authentic student journey, zero friction philosophy, and future roadmap.
-
-6. **DOWNLOAD NEXA**
-   - Final CTA: *"Your student life is already complicated. Managing it shouldn't be."* → **GET NEXA**.
-   - Direct Android APK download with celebratory confetti, interactive QR code scanner modal, and Google Play Store channel info.
+> **Core philosophy:** *Less remembering. Less searching. Less switching. More doing.*
 
 ---
 
-## 🎨 Design Philosophy
+## 🧠 NIA — The Intelligence Behind NEXA
 
-- **Palette**: Pure high-end monochrome (Black `#050508`, Charcoal, Graphite, Silver `#d4d4d8`, Off-White, Crisp Pure White `#ffffff`).
-- **3D Depth**: Interactive 3D tilt cards with specular cursor glare, dynamic HTML5 canvas neural constellation, and floating translucent glass panels.
-- **Performance**: 60fps lightweight execution, fully responsive across desktop, tablet, and mobile, with full support for `prefers-reduced-motion`.
+NIA operates across **11 cognitive dimensions** through a dual-engine architecture:
+
+- **Mode A — Connected / Cloud:** Gemini multimodal reasoning, Vision & OCR, 12 structured action tools
+- **Mode B — Offline / On-Device:** Local intent parsing, sub-10ms timetable lookup, resilient offline action queues
+
+**5-step pipeline:** Student → Data & Context → NIA AI Processing → Dual Router → Personalized Output
 
 ---
 
-## 🚀 Running Locally
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 20+
+- npm
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/kunal4060/NEXA.git
+cd NEXA
+
 # Install dependencies
-npm install
+npm ci
 
 # Start development server
 npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
 ```
+
+### Build for Production
+
+```bash
+npm run build
+# Output: dist/
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** React 18 + Vite
+- **Styling:** Tailwind CSS
+- **3D / Motion:** Custom canvas particle engine, 3D card tilts
+- **Icons:** Lucide React
+- **Fonts:** Syncopate (display), Space Grotesk (headings), JetBrains Mono (labels)
+- **Deployment:** GitHub Pages (via `peaceiris/actions-gh-pages`)
+
+---
+
+## 📁 Project Structure
+
+```
+NEXA/
+├── src/
+│   ├── components/       # Page sections (Hero, Features, Pipeline…)
+│   ├── shared/           # Reusable UI (Card3D, ScrollProgress…)
+│   ├── index.css         # Tailwind + custom styles
+│   └── App.jsx           # Composition root
+├── index.html            # Entry + social meta tags
+├── vite.config.js        # base: '/NEXA/' for Pages
+├── tailwind.config.js
+└── .github/workflows/    # Pages deploy workflow
+```
+
+---
+
+## 🎨 Design Highlights
+
+- Signature **violet (#8B5CF6)** accent on CTAs, glows, and progress indicators
+- Glassmorphism cards with backdrop blur
+- Ambient particle constellation canvas (violet-tinted)
+- Scroll progress bar + back-to-top button
+- Device-aware QR modal (direct download on mobile)
+- `prefers-reduced-motion` support & mobile performance guards
+- Full keyboard-focus accessibility
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing`)
+3. Commit your changes (`git commit -m 'feat: amazing thing'`)
+4. Push and open a Pull Request
+
+---
+
+## 👥 Credits
+
+Built with passion by **Team GLITCHERS** — *technology designed around the way students actually live, learn and manage their day.*
+
+---
+
+<div align="center">
+
+**[🌐 Live Demo](https://kunal4060.github.io/NEXA/)** · **[📥 Download App](https://drive.google.com/drive/folders/1FTWEF3Nv-DdVrEB-r9dI_ydVPCRpv3xD)** · **[🐛 Report Issue](https://github.com/kunal4060/NEXA/issues)**
+
+</div>
