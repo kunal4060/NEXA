@@ -33,7 +33,8 @@ function applyTheme(id, save = true) {
 }
 
 function randomTheme() {
-  return THEME_IDS[Math.floor(Math.random() * THEME_IDS.length)];
+  // First-visit default: always purple (violet) or blue (cyan)
+  return Math.random() < 0.5 ? 'violet' : 'cyan';
 }
 
 function nextTheme(id) {
