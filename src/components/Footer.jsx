@@ -80,6 +80,11 @@ export default function Footer() {
             <span>Dual Cognitive Engine v2.4 Active</span>
           </div>
         </div>
+
+        {/* Ideation credit */}
+        <div className="pt-4 text-center text-zinc-600 text-[10px] font-mono tracking-wide">
+          Ideated by Kartiki More
+        </div>
       </div>
     </footer>
   );
